@@ -1,6 +1,10 @@
 import click
 from classes.calculation import Calculation
 
+import sys
+import os
+sys.path.append(os.path.abspath(".."))
+
 
 @click.command()
 @click.option('--function_name', '-function', help='Name of the function to be called', required=True)
