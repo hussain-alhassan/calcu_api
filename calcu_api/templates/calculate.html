@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="GET" action="api/add">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="first_number" placeholder="First Number"/>
+                    <span class="input-group-addon">&nbsp;+&nbsp;</span>
+                    <input type="text" class="form-control" name="second_number" placeholder="Second Number"/>
+                    &nbsp;<input type="submit" value="Add" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/subtract">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="first_number" placeholder="First Number"/>
+                    <span class="input-group-addon">&nbsp;-&nbsp;</span>
+                    <input type="text" class="form-control" name="second_number" placeholder="Second Number"/>
+                    &nbsp;<input type="submit" value="Subtract" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/multiply">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="first_number" placeholder="First Number"/>
+                    <span class="input-group-addon">&nbsp;*&nbsp;</span>
+                    <input type="text" class="form-control" name="second_number" placeholder="Second Number"/>
+                    &nbsp;<input type="submit" value="Multiply" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        </form>
+        <form method="GET" action="api/divide">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="first_number" placeholder="First Number"/>
+                    <span class="input-group-addon">&nbsp;/&nbsp;</span>
+                    <input type="text" class="form-control" name="second_number" placeholder="Second Number"/>
+                    &nbsp;<input type="submit" value="Divide" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/square-root">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">&nbsp;√&nbsp;</span>
+                    <input type="text" class="form-control" name="sqrt_number" placeholder="Square Root Number"/>
+                    &nbsp;<input type="submit" value="Square Root" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/cube-root">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">&nbsp;∛&nbsp;</span>
+                    <input type="text" class="form-control" name="cube_number" placeholder="Cube Root Number"/>
+                    &nbsp;<input type="submit" value="Cube Root" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/power">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="base_number" placeholder="Base Number"/>
+                    <span class="input-group-addon">&nbsp;^&nbsp;</span>
+                    <input type="text" class="form-control" name="exponent_number" placeholder="Exponent Number"/>
+                    &nbsp;<input type="submit" value="Power" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+        <form method="GET" action="api/factorial">
+            <fieldset class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="factorial_number" placeholder="Factorial Number"/>
+                    <span class="input-group-addon">&nbsp;!&nbsp;</span>
+                    &nbsp;<input type="submit" value="Factorial" class="btn btn-outline-info">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
