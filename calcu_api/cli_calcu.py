@@ -1,3 +1,6 @@
+"""
+cli_calcu.py fime handles the API requests from the CLI and returns the JSON response.
+"""
 import click
 from classes.calculation import Calculation
 
@@ -13,8 +16,7 @@ sys.path.append(os.path.abspath(".."))
 def main(function_name, first_number, second_number):
     calc_obj = Calculation()
 
-
-    # call the right function and pass the parameters from the command
+    # call the right function and pass the parameters from the command line
     if function_name == 'add':
         response = calc_obj.add(first_number, second_number)
         print(response)
